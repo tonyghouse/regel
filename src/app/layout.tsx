@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 // const inter = Inter({ subsets: ["latin"] });
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
+import ThemeContextDefaultProvider from "@/context/ThemeContextProvider";
+import Navbar from "@/components/Navbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,10 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <ThemeContextDefaultProvider>
+
+    
       <body  className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased mx-1 my-1",
           fontSans.variable
-        )}>{children}</body>
+        )}>
+           <Navbar/>
+          {children}</body>
+          </ThemeContextDefaultProvider>
     </html>
   );
 }
