@@ -12,7 +12,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Regel",
-  description: "",
+  description: "Regular Expression Helper Tool",
 };
 
 export default function RootLayout({
