@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { ReactElement, useContext, useState } from "react";
 import { ThemeContext, IThemeContextType } from "../context/ThemeContext";
 import RegexBar from "./RegexBar";

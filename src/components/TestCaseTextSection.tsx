@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useContext,ChangeEvent } from "react";
 // import  {Highlight}  from "react-highlighter";
 // var Highlight = require('react-highlighter');

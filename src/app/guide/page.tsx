@@ -130,7 +130,7 @@ function GuidePage() {
           <TableBody>
 
             {metacharacterList.map( (v:any) =>{
-                  return  <TableRow>
+                  return  <TableRow key={v.desc}>
                     <TableCell >{v.character}</TableCell>
                     <TableCell>{v.desc}</TableCell>
                     <TableCell>{v.example}</TableCell>
@@ -159,7 +159,7 @@ function GuidePage() {
           <TableBody>
 
             {specialSequencesList.map( (v:any) =>{
-                  return  <TableRow>
+                  return  <TableRow key={v.desc}>
                     <TableCell >{v.character}</TableCell>
                     <TableCell>{v.desc}</TableCell>
                     <TableCell>{v.example}</TableCell>

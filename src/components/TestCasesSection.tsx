@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, {useContext, ChangeEvent, useState } from "react";
 import { RxPlus, RxPencil1, RxCross1 } from "react-icons/rx";
 import { ThemeContext, IThemeContextType } from "../context/ThemeContext";
@@ -82,9 +82,8 @@ function TestCasesSection({
       <div id="test-cases-list">
         {testCaseList.map((val: string, key: number) => {
           return (
-            <div className="flex flex-row items-center ">
+            <div  key={key} className="flex flex-row items-center ">
               <div
-                key={key}
                 className={`${getTestCaseStyle(val)}
                  m-[0.5rem] border-[0.05rem] p-[0.2rem]  flex-1
                `}
